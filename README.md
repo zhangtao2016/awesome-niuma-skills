@@ -3,7 +3,7 @@
 > **让天下牛马都能优雅地干活**
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Skill-数量-181-blue?style=for-the-badge" alt="Skill数量">
+  <img src="https://img.shields.io/badge/Skill-数量-178-blue?style=for-the-badge" alt="Skill数量">
   <img src="https://img.shields.io/badge/适用人群-打工人-green?style=for-the-badge" alt="适用人群">
   <img src="https://img.shields.io/badge/态度-自嘲救赎-red?style=for-the-badge" alt="态度">
   <img src="https://img.shields.io/badge/效果-升职加薪-yellow?style=for-the-badge" alt="效果">
@@ -78,157 +78,221 @@ awesome-niuma-skills/
 ├── skill/
 │   │
 │   ├── 🤝 HR人力资源/                          (39 skills)
-│   │   ├── 简历优化/
-│   │   │   ├── 简历诊断专家/
-│   │   │   ├── 简历润色大师/
-│   │   │   └── 简历翻译官/
-│   │   ├── 人才分析/
-│   │   │   ├── 面试问题生成器/
-│   │   │   ├── 候选人评估模型/
-│   │   │   └── 人才画像分析师/
+│   │   ├── change-management: 变革管理
+│   │   ├── chro-advisor: 首席人力资源官顾问
+│   │   ├── culture-architect: 企业文化架构师
+│   │   ├── org-health-diagnostic: 组织健康诊断
 │   │   ├── HR系统集成/
-│   │   │   ├── 考勤数据分析师/
-│   │   │   ├── 员工满意度调查/
-│   │   │   └── 离职率预测模型/
-│   │   ├── 薪酬与绩效/
-│   │   │   ├── 绩效考核生成器/
-│   │   │   ├── 薪酬调整建议师/
-│   │   │   └── 奖金分配计算器/
+│   │   │   ├── rippling-automation: Rippling 自动化
+│   │   │   ├── talenthr-automation: TalentHR 自动化
+│   │   │   └── Workday Automation: Workday 自动化
+│   │   ├── 人才分析/
+│   │   │   ├── interpreting-culture-index: 文化指数解读
+│   │   │   ├── org-planning: 组织规划
+│   │   │   ├── people-analytics: 人才数据分析
+│   │   │   └── people-report: 人才报告
+│   │   ├── 员工发展与文化/
+│   │   │   ├── cs-onboard: 客户成功入职
+│   │   │   ├── culture-architect: 企业文化架构师
+│   │   │   ├── culture-playbook: 文化手册
+│   │   │   ├── employee-handbook: 员工手册
+│   │   │   └── policy-lookup: 政策查询
 │   │   ├── 招聘与面试/
-│   │   │   ├── JD撰写助手/
-│   │   │   ├── 面试邀约话术/
-│   │   │   └── offer谈判技巧/
-│   │   └── 员工发展与文化/
-│   │       ├── 培训计划生成器/
-│   │       ├── 团建方案策划/
-│   │       └── 员工手册撰写/
+│   │   │   ├── Ashby Automation: Ashby ATS 自动化
+│   │   │   ├── async-interview-automation: 异步面试自动化
+│   │   │   ├── bias-mitigation-checklist: 偏见规避清单
+│   │   │   ├── breezy-hr-automation: Breezy HR 自动化
+│   │   │   ├── competency-matrix-templates: 胜任力矩阵模板
+│   │   │   ├── debrief-facilitation-guide: 面试复盘引导指南
+│   │   │   ├── draft-offer: Offer 草拟
+│   │   │   ├── icims-talent-cloud-automation: iCIMS 人才云自动化
+│   │   │   ├── interview-prep: 面试准备
+│   │   │   ├── interview-system-designer: 面试体系设计师
+│   │   │   ├── Lever Automation: Lever ATS 自动化
+│   │   │   ├── onboarding: 员工入职
+│   │   │   ├── recruitee-automation: Recruitee 自动化
+│   │   │   ├── recruiting-pipeline: 招聘流程管理
+│   │   │   └── smartrecruiters-automation: SmartRecruiters 自动化
+│   │   ├── 简历优化/
+│   │   │   └── tailored-resume-generator: 定制化简历生成
+│   │   └── 薪酬与绩效/
+│   │       ├── chro-advisor: 首席人力资源官顾问
+│   │       ├── comp-analysis: 薪酬分析
+│   │       ├── comp-frameworks: 薪酬框架
+│   │       ├── compensation-benchmarking: 薪酬基准测评
+│   │       ├── org-design: 组织设计
+│   │       ├── people-strategy: 人才战略
+│   │       └── performance-review: 绩效评估
 │   │
 │   ├── 📱 产品经理/                             (56 skills)
-│   │   ├── 用户研究/
-│   │   │   ├── 用户访谈大纲生成/
-│   │   │   ├── 问卷设计助手/
-│   │   │   ├── 用户画像构建/
-│   │   │   ├── 竞品分析报告/
-│   │   │   └── 用户旅程地图/
-│   │   ├── 数据与财务/
-│   │   │   ├── 数据指标定义/
-│   │   │   ├── 财务模型搭建/
-│   │   │   ├── ROI计算器/
-│   │   │   └── 盈亏平衡分析/
-│   │   ├── 需求与文档/
-│   │   │   ├── PRD撰写模板/
-│   │   │   ├── 需求优先级排序/
-│   │   │   ├── 用户故事地图/
-│   │   │   ├── 功能规格说明/
-│   │   │   └── 变更日志撰写/
 │   │   ├── 产品思维/
-│   │   │   ├── 商业模式画布/
-│   │   │   ├── MVP设计助手/
-│   │   │   ├── Aha Moment分析/
-│   │   │   └── 产品增长策略/
-│   │   ├── 市场与定位/
-│   │   │   ├── 市场调研报告/
-│   │   │   ├── 竞品定位分析/
-│   │   │   ├── 价格策略制定/
-│   │   │   └── 渠道策略规划/
+│   │   │   ├── cross-pollination-engine: 跨领域思维引擎
+│   │   │   ├── first-principles-decomposer: 第一性原理分解器
+│   │   │   ├── intent-explorer: 意图探索器
+│   │   │   ├── inversion-strategist: 逆向思维策略师
+│   │   │   ├── jtbd-analyzer: 待完成任务分析器
+│   │   │   └── pre-mortem-analyst: 事前验尸分析师
 │   │   ├── 产品策略/
-│   │   │   ├── Roadmap规划/
-│   │   │   ├── OKR设定助手/
-│   │   │   ├── 战略分析框架/
-│   │   │   └── 产品组合分析/
+│   │   │   ├── altitude-horizon-framework: 高度视野框架
+│   │   │   ├── epic-breakdown-advisor: 史诗任务拆解顾问
+│   │   │   ├── epic-hypothesis: 史诗假设验证
+│   │   │   ├── opportunity-solution-tree: 机会解决方案树
+│   │   │   ├── prioritization-advisor: 优先级顾问
+│   │   │   ├── product-strategy-session: 产品战略会议
+│   │   │   ├── recommendation-canvas: 推荐画布
+│   │   │   ├── roadmap-planning: 路线图规划
+│   │   │   └── storyboard: 故事板
+│   │   ├── 市场与定位/
+│   │   │   ├── acquisition-channel-advisor: 获客渠道顾问
+│   │   │   ├── company-research: 公司调研
+│   │   │   ├── eol-message: 产品下线通知
+│   │   │   ├── pestel-analysis: PESTEL 宏观分析
+│   │   │   ├── positioning-statement: 定位陈述
+│   │   │   ├── positioning-workshop: 定位工作坊
+│   │   │   ├── press-release: 新闻稿
+│   │   │   └── tam-sam-som-calculator: 市场规模测算
+│   │   ├── 数据与财务/
+│   │   │   ├── business-health-diagnostic: 业务健康诊断
+│   │   │   ├── feature-investment-advisor: 功能投资顾问
+│   │   │   ├── finance-based-pricing-advisor: 财务驱动定价顾问
+│   │   │   ├── finance-metrics-quickref: 财务指标速查
+│   │   │   ├── pol-probe: P&L 探针
+│   │   │   ├── saas-economics-efficiency-metrics: SaaS 经济效率指标
+│   │   │   └── saas-revenue-growth-metrics: SaaS 营收增长指标
 │   │   ├── 日常工作/
-│   │   │   ├── 会议纪要生成/
-│   │   │   ├── 周报月报撰写/
-│   │   │   ├── 项目排期表生成/
-│   │   │   └── 跨部门沟通话术/
+│   │   │   ├── idea-validator: 想法验证器
+│   │   │   ├── linkedin-post-writer: LinkedIn 帖子撰写
+│   │   │   ├── product-designer: 产品设计师
+│   │   │   ├── prompt-engineer: 提示词工程师
+│   │   │   └── status-update-writer: 进度更新撰写
+│   │   ├── 用户研究/
+│   │   │   ├── customer-journey-map: 用户旅程地图
+│   │   │   ├── customer-journey-mapping-workshop: 用户旅程地图工作坊
+│   │   │   ├── discovery-interview-prep: 探索性访谈准备
+│   │   │   ├── discovery-process: 发现流程
+│   │   │   ├── jobs-to-be-done: 待完成任务框架
+│   │   │   └── proto-persona: 原型用户画像
 │   │   ├── 职业成长/
-│   │   │   ├── 产品经理技能树/
-│   │   │   ├── 晋升述职PPT/
-│   │   │   └── 面试题库大全/
+│   │   │   ├── ai-shaped-readiness-advisor: AI 时代就绪度顾问
+│   │   │   ├── context-engineering-advisor: 上下文工程顾问
+│   │   │   ├── director-readiness-advisor: 总监晋升就绪度顾问
+│   │   │   ├── executive-onboarding-playbook: 高管入职手册
+│   │   │   ├── vp-cpo-readiness-advisor: VP/CPO 晋升就绪度顾问
+│   │   │   └── workshop-facilitation: 工作坊引导
+│   │   ├── 需求与文档/
+│   │   │   ├── lean-ux-canvas: 精益 UX 画布
+│   │   │   ├── prd-development: PRD 开发
+│   │   │   ├── problem-framing-canvas: 问题框架画布
+│   │   │   ├── problem-statement: 问题陈述
+│   │   │   ├── user-story: 用户故事
+│   │   │   ├── user-story-mapping: 用户故事地图
+│   │   │   ├── user-story-mapping-workshop: 用户故事地图工作坊
+│   │   │   └── user-story-splitting: 用户故事拆分
 │   │   └── 中文双语/
-│   │       ├── 中英双语PRD/
-│   │       └── 英文商务邮件/
+│   │       └── product-management: 产品管理（中英双语）
 │   │
-│   ├── 🎨 图形处理/                              (5 skills)
-│   │   ├── diagram-reports-generator/
-│   │   │   └── 图表报告生成器/
-│   │   └── excalidraw-diagram-generator/
-│   │       └── 手绘风格图表生成/
+│   ├── 🎨 图形处理/                              (2 skills)
+│   │   ├── diagram-reports-generator: 图表报告生成器
+│   │   │   └── scripts/
+│   │   └── excalidraw-diagram-generator: Excalidraw 图表生成器
+│   │       ├── references/
+│   │       ├── scripts/
+│   │       └── templates/
 │   │
 │   ├── 📢 新媒体运营/                            (63 skills)
-│   │   ├── 文案与写作/
-│   │   │   ├── 公众号选题助手/
-│   │   │   ├── 爆款标题生成器/
-│   │   │   ├── 开头结尾模板/
-│   │   │   ├── 软文撰写大师/
-│   │   │   ├── 评论区运营话术/
-│   │   │   └── 文章润色改写/
+│   │   ├── brand-guidelines: 品牌规范
+│   │   ├── content-research-writer: 内容调研撰写
+│   │   ├── reply-automation: 评论自动回复
+│   │   ├── twitter-algorithm-optimizer: Twitter 算法优化器
 │   │   ├── SEO与流量/
-│   │   │   ├── 关键词规划师/
-│   │   │   ├── SEO标题优化/
-│   │   │   ├── Meta描述撰写/
-│   │   │   ├── 内链布局策略/
-│   │   │   └── 流量增长分析/
-│   │   ├── 邮件营销/
-│   │   │   ├── 促销邮件模板/
-│   │   │   ├── 邮件主题优化/
-│   │   │   ├── 退订率降低策略/
-│   │   │   └── 邮件自动化流程/
+│   │   │   ├── ai-seo: AI SEO 优化
+│   │   │   ├── competitor-alternatives: 竞品替代方案
+│   │   │   ├── content-gap-analysis: 内容缺口分析
+│   │   │   ├── content-production: 内容生产
+│   │   │   ├── content-quality-auditor: 内容质量审计
+│   │   │   ├── content-refresher: 内容更新优化
+│   │   │   ├── content-strategy: 内容策略
+│   │   │   ├── geo-content-optimizer: 地理内容优化器
+│   │   │   ├── keyword-research: 关键词研究
+│   │   │   ├── seo-audit: SEO 审计
+│   │   │   └── seo-content-writer: SEO 内容撰写
+│   │   ├── 品牌与策略/
+│   │   │   ├── brand-guidelines: 品牌规范
+│   │   │   ├── campaign-analytics: 营销活动分析
+│   │   │   ├── campaign-planning: 营销活动规划
+│   │   │   ├── competitive-analysis: 竞争对手分析
+│   │   │   ├── launch-strategy: 产品发布策略
+│   │   │   ├── marketing-ideas: 营销创意集
+│   │   │   ├── marketing-strategy-pmm: PMM 营销策略
+│   │   │   └── press-release: 新闻稿
+│   │   ├── 文案与写作/
+│   │   │   ├── anti-ai-writing: 去 AI 味写作
+│   │   │   ├── cold-open-creator: 冷开场创作
+│   │   │   ├── content-creation: 内容创作
+│   │   │   ├── content-humanizer: 内容人性化
+│   │   │   ├── copy-editing: 文案编辑
+│   │   │   ├── copy-frameworks: 文案框架
+│   │   │   ├── copywriting: 文案写作
+│   │   │   ├── ghostwriter: 代笔写作
+│   │   │   ├── headline-formulas: 标题公式
+│   │   │   ├── hook-and-headline-writing: 钩子与标题写作
+│   │   │   ├── marketing-psychology: 营销心理学
+│   │   │   ├── power-words: 力量词库
+│   │   │   └── voice-dna-creator: 品牌声音 DNA 创建器
 │   │   ├── 社交媒体内容/
-│   │   │   ├── 微博文案生成/
-│   │   │   ├── 小红书笔记/
-│   │   │   ├── 抖音脚本撰写/
-│   │   │   ├── B站视频文案/
-│   │   │   └── 知乎问答助手/
+│   │   │   ├── linkedin-post: LinkedIn 帖子
+│   │   │   ├── market-social-calendar: 营销社交日历
+│   │   │   ├── platforms: 平台策略
+│   │   │   ├── post-structures: 帖子结构模式
+│   │   │   ├── post-templates: 帖子模板
+│   │   │   ├── social-content: 社交内容
+│   │   │   ├── social-content-creation: 社交内容创作
+│   │   │   ├── social-media-analyzer: 社交媒体分析器
+│   │   │   ├── social-media-bio-generator: 社交媒体简介生成器
+│   │   │   ├── social-media-manager: 社交媒体管理器
+│   │   │   ├── substack-note: Substack 文章
+│   │   │   ├── text-content: 文字内容
+│   │   │   ├── twitter-thread: Twitter 长推
+│   │   │   └── x-posting: X 平台发帖
 │   │   ├── 视频与播客/
-│   │   │   ├── 短视频脚本/
-│   │   │   ├── 直播话术脚本/
-│   │   │   ├── 播客节目大纲/
-│   │   │   ├── 视频标题优化/
-│   │   │   └── 字幕处理助手/
-│   │   └── 品牌与策略/
-│   │       ├── 品牌故事撰写/
-│   │       ├── Slogan生成器/
-│   │       ├── 品牌定位报告/
-│   │       └── IP形象设计/
+│   │   │   ├── podcast-blog-post-creator: 播客博客文章生成器
+│   │   │   ├── podcast-production: 播客制作
+│   │   │   ├── short-form-video: 短视频
+│   │   │   ├── video-caption-creation: 视频字幕创作
+│   │   │   ├── youtube-clip-extractor: YouTube 精华提取器
+│   │   │   └── youtube-title-creator: YouTube 标题创作器
+│   │   └── 邮件营销/
+│   │       ├── cold-email: 冷邮件
+│   │       ├── email-sequence: 邮件序列
+│   │       ├── email-types: 邮件类型指南
+│   │       ├── how-newsletters: Newsletter 创作指南
+│   │       ├── sales-email-sequence: 销售邮件序列
+│   │       ├── sequence-templates: 邮件序列模板
+│   │       └── subject-lines: 邮件主题行
 │   │
 │   ├── 🛒 电商运营/                               (7 skills)
-│   │   ├── 数据分析/
-│   │   │   ├── 店铺数据日报/
-│   │   │   ├── 转化率漏斗分析/
-│   │   │   ├── 客户生命周期/
-│   │   │   └── 竞品价格监控/
-│   │   ├── 供应链风控/
-│   │   │   ├── 库存预警系统/
-│   │   │   └── 供应商评估/
-│   │   └── 市场洞察/
-│   │       ├── 爆款预测模型/
-│   │       ├── 用户评论分析/
-│   │       └── 趋势热点捕捉/
+│   │   ├── app-store-optimization: 应用商店优化
+│   │   ├── campaign-analytics: 营销活动分析
+│   │   ├── interpreting-culture-index: 文化指数解读
+│   │   ├── marketing-demand-acquisition: 营销需求获取
+│   │   ├── social-media-analyzer: 社交媒体分析器
+│   │   ├── supply-chain-risk-auditor: 供应链风险审计
+│   │   └── variant-analysis: 变体分析
 │   │
 │   ├── 💻 程序员_开发/                           (6 skills)
-│   │   ├── code-review/
-│   │   │   └── 代码审查助手/
-│   │   ├── documentation/
-│   │   │   ├── API文档生成/
-│   │   │   └── 技术文档撰写/
-│   │   ├── incident-response/
-│   │   │   ├── 故障报告模板/
-│   │   │   └── 复盘文档生成/
-│   │   ├── system-design/
-│   │   │   └── 架构设计评审/
-│   │   ├── tech-debt/
-│   │   │   └── 技术债务报告/
-│   │   └── testing-strategy/
-│   │       └── 测试策略制定/
+│   │   ├── code-review: 代码审查
+│   │   ├── documentation: 技术文档
+│   │   ├── incident-response: 故障应急响应
+│   │   ├── system-design: 系统设计
+│   │   ├── tech-debt: 技术负债
+│   │   └── testing-strategy: 测试策略
 │   │
 │   └── 📋 行政文员/                               (5 skills)
-│       └── 办公技能/
-│           ├── 会议纪要生成/
-│           ├── 通知公告撰写/
-│           ├── 报销单据模板/
-│           ├── 办公用品采购/
-│           └── 差旅行程安排/
+│       ├── create-lecture: 课件制作
+│       ├── data-analysis: 数据分析
+│       ├── meeting-workflow-quick-ref: 会议工作流速查
+│       ├── proofread: 校对审阅
+│       └── research-ideation: 研究与头脑风暴
 │
 ├── README.md
 └── 贡献指南.md
@@ -242,12 +306,12 @@ awesome-niuma-skills/
 |------|------|------|
 | 🤝 HR人力资源 | 39 | 求职简历不求人 |
 | 📱 产品经理 | 56 | 需求文档秒完成 |
-| 🎨 图形处理 | 5 | 图表动效一键造 |
+| 🎨 图形处理 | 2 | 图表动效一键造 |
 | 📢 新媒体运营 | 63 | 流量密码我全要 |
 | 🛒 电商运营 | 7 | 数据驱动GMV |
 | 💻 程序员_开发 | 6 | 代码优雅不秃头 |
 | 📋 行政文员 | 5 | 杂活也能干漂亮 |
-| **总计** | **181** | **牛马技能全收录** |
+| **总计** | **178** | **牛马技能全收录** |
 
 ---
 
@@ -324,10 +388,10 @@ awesome-niuma-skills/
 
 ```bash
 # 找到你需要的Skill分类
-cd skill/你想要的分类
+cd skill/你想要的分类/子分类/技能名称
 
 # 查看该Skill的详细说明
-cat README.md
+cat *.md
 ```
 
 ### 方法二：按需取用
