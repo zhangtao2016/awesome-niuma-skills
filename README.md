@@ -34,7 +34,7 @@
 
 ```bash
 # 克隆本仓库
-git clone https://github.com/brizer/awesome-niuma-skills.git
+git clone https://github.com/ffanglaili/awesome-niuma-skills.git
 
 # 进入目录
 cd awesome-niuma-skills
