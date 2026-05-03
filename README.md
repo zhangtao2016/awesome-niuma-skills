@@ -75,7 +75,7 @@ cat README.md  # 开工！
 ```
 awesome-niuma-skills/
 │
-├── skill/
+├── skills/
 │   │
 │   ├── 🤝 HR人力资源/                          (39 skills)
 │   │   ├── change-management: 变革管理
