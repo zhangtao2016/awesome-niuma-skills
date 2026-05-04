@@ -3,7 +3,7 @@
 > **让天下牛马都能优雅地干活**
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Skill-数量-290-blue?style=for-the-badge" alt="Skill数量">
+  <img src="https://img.shields.io/badge/Skill数量-292-blue?style=for-the-badge" alt="Skill数量">
   <img src="https://img.shields.io/badge/适用人群-打工人-green?style=for-the-badge" alt="适用人群">
   <img src="https://img.shields.io/badge/态度-自嘲救赎-red?style=for-the-badge" alt="态度">
   <img src="https://img.shields.io/badge/效果-升职加薪-yellow?style=for-the-badge" alt="效果">
@@ -66,7 +66,7 @@ skills/
 ├── 文档处理/            # 15个技能 ── 文档表格全搞定
 ├── 新媒体运营/          # 63个技能 ── 流量密码我全要
 ├── 电商运营/            # 7个技能  ── 数据驱动GMV
-├── 知识管理/            # 4个技能  ── 知识图谱不再乱
+├── 知识管理/            # 6个技能  ── 知识图谱不再乱
 ├── 程序员_开发/          # 33个技能 ── 代码优雅不秃头
 ├── 程序员_测试/          # 4个技能  ── 测试用例自动写
 ├── 网络游戏/            # 1个技能  ── 排行数据轻松采
@@ -78,23 +78,13 @@ skills/
 
 ```bash
 # 假设你想优化简历
-cd skills/HR人力资源/简历优化
-cat README.md  # 查看技能详情
+cd skills/HR人力资源/简历优化/tailored-resume-generator
+cat SKILL.md  # 查看技能详情
 
 # 假设你是产品经理在写PRD
-cd skills/产品经理/需求与文档
-cat README.md  # 开工！
+cd skills/产品经理/需求与文档/prd-development
+cat SKILL.md  # 开工！
 ```
-
----
-
-## 📂 Skill 目录树
-
-> 完整目录树已提取至 [skills-tree.md](./docs/skills-tree.md)，共 **19 个分类、290 项技能**。
->
-> 完整技能清单已提取至 [skills-list.md](./docs/skills-list.md)，共 **292 条记录**（含嵌套子目录），按分类索引每个技能的名称、描述与路径。
->
-> 点击上方链接查看详细内容。
 
 ---
 
@@ -115,186 +105,31 @@ cat README.md  # 开工！
 | 📄 文档处理 | 15 | 文档表格全搞定 |
 | 📢 新媒体运营 | 63 | 流量密码我全要 |
 | 🛒 电商运营 | 7 | 数据驱动GMV |
-| 🧠 知识管理 | 4 | 知识图谱不再乱 |
+| 🧠 知识管理 | 6 | 知识图谱不再乱 |
 | 💻 程序员_开发 | 33 | 代码优雅不秃头 |
 | 🧪 程序员_测试 | 4 | 测试用例自动写 |
 | 🎮 网络游戏 | 1 | 排行数据轻松采 |
 | 🕷️ 网络爬虫工具 | 13 | 网页数据抓到手 |
 | 📋 行政文员 | 5 | 杂活也能干漂亮 |
-| **总计** | **290** | **牛马技能全收录** |
+| **总计** | **292** | **牛马技能全收录** |
+
+---
+
+## 📂 Skill 目录树
+
+> 完整目录树已提取至 [skills-tree.md](docs/skills-tree.md)，共 **19 个分类、292 项技能**。
+>
+> 完整技能清单已提取至 [skills-list.md](docs/skills-list.md)，共 **292 条记录**（含嵌套子目录），按分类索引每个技能的名称、描述与路径。
+>
+> 点击上方链接查看详细内容。
 
 ---
 
 ## 🎯 Skill 介绍
 
-### 🎬 AI多模态与媒体生成
-
-> "AI不仅能写文，还能出图出视频出声音"
-
-8个技能覆盖AI多模态内容生成。适合：
-- 想用AI生成视频/音乐/语音的创作者
-- 需要制作GIF贴纸/表情包的运营人
-- 想探索Shader艺术的技术美学爱好者
-
-### 🤝 HR人力资源
-
-> "我不是HR，但我学会了给自己写推荐信"
-
-38个技能覆盖简历、面试、绩效、薪酬全流程。适合：
-- 正在找工作或跳槽的打工人
-- 想提升职场竞争力的牛马
-- 需要做员工管理的基层主管
-
-### 🔧 skill管理
-
-> "让技能自我进化，越用越强"
-
-7个技能覆盖Skill的创建、优化与生命周期管理。适合：
-- 想创建自定义Skill的效率达人
-- 需要持续优化Skill质量的技能维护者
-- 想将GitHub项目一键转为Skill的开发者
-
-### 📱 产品经理
-
-> "PRD不是我的枷锁，是我的画布"
-
-56个技能覆盖产品经理日常工作全场景。适合：
-- 被需求文档支配的产品经理
-- 想转行产品的运营和市场
-- 创业公司的全能型选手（一人撑起一个产品部）
-
-### 🚀 创业与商业
-
-> "极简创业，先活下来再优雅"
-
-10个技能覆盖极简主义创业全流程。适合：
-- 想创业但不知从何下手的打工人
-- 正在MVP阶段的创业者
-- 想验证商业点子的冒险家
-
-### 🏥 医学
-
-> "AI也能写综述，导师看了都说好"
-
-1个技能专注医学影像AI文献综述。适合：
-- 正在写综述论文的医学研究生
-- 从事医学影像AI研究的科研人员
-
-### 💬 即时通讯平台
-
-> "企微钉钉飞书，一个都不放过"
-
-13个技能覆盖企业微信/钉钉/飞书办公自动化。适合：
-- 日常依赖企业微信办公的打工人
-- 需要自动化钉钉工作流的运营
-- 想用AI提升即时通讯效率的任何人
-
-### 🎭 名人传记
-
-> "站在巨人的肩膀上看问题"
-
-4个技能以名人视角分析问题。适合：
-- 想用毛泽东战略思维分析问题的牛马
-- 想让AI更有“人味”的创作者
-- 想以鱼皮视角获取编程建议的学习者
-
-### 🎨 图形处理
-
-> "设计师太贵，我自己来"
-
-3个技能帮你快速生成专业图表和示意图。适合：
-- 需要画架构图但不会设计的程序员
-- 需要画流程图但懒得打开Visio的任何人
-- 周报里需要几张好看图表的职场人
-
-### 🖌️ 排版设计
-
-> "配色排版一出手，老板以为我请了设计师"
-
-5个技能覆盖配色、字体、风格与主题。适合：
-- 需要做PPT但不懂配色的职场人
-- 想给文档/页面选一个好主题的设计小白
-- 想统一品牌视觉规范的品牌人
-
-### 📄 文档处理
-
-> "Word/PPT/Excel/PDF，一个都不在话下"
-
-15个技能覆盖文档创建、编辑与格式化。适合：
-- 每天和Word/Excel/PPT打交道的打工人
-- 需要批量处理文档的行政人员
-- 想要专业级PDF报告的任何人
-
-### 📢 新媒体运营
-
-> "10万+不能只靠玄学"
-
-63个技能覆盖文案、SEO、邮件、社媒、视频全链路。适合：
-- 一个人撑起一个新媒体部门的小编
-- 想做副业但不知道从哪下手的打工人
-- 老板说"随便弄弄"但其实很认真的运营
-
-### 🛒 电商运营
-
-> "GMV是老板的梦想，我的梦想是不加班"
-
-7个技能覆盖电商核心场景。适合：
-- 淘宝/京东/拼多多店主
-- 电商平台的运营人员
-- 想做电商副业的打工人
-
-### 🧠 知识管理
-
-> "知识不是力量，整理过的知识才是"
-
-4个技能覆盖知识整理、图谱与笔记管理。适合：
-- 电脑文件一团乱的打工人
-- 想构建个人知识库的学习者
-- 使用NotebookLM做知识管理的深度用户
-
-### 💻 程序员_开发
-
-> "代码写得好不如文档写得好"
-
-33个技能覆盖前端开发、开发工作流与开发工具。适合：
-- 被PR review折磨的程序员
-- 写文档写到怀疑人生的开发者
-- 想提升技术影响力的工程师
-
-### 🧪 程序员_测试
-
-> "测试不是找茬，是守门"
-
-4个技能覆盖测试策略与用例生成。适合：
-- 不想手写测试用例的程序员
-- 想实践TDD的开发者
-- 需要做Web应用测试的前端工程师
-
-### 🎮 网络游戏
-
-> "玩游戏不如采数据"
-
-1个技能专注KK对战平台排行榜数据采集。适合：
-- 想分析游戏排行榜数据的技术玩家
-- 需要定时爬取游戏榜单的开发者
-
-### 🕷️ 网络爬虫工具
-
-> "网页数据千千万，Firecrawl一把梭"
-
-13个技能覆盖Firecrawl全系列爬虫能力。适合：
-- 需要抓取网页数据的运营和分析师
-- 想做竞品监控的电商从业者
-- 需要批量下载网站内容的开发者
-
-### 📋 行政文员
-
-> "行政不是杂工，是公司的润滑剂"
-
-5个技能覆盖行政日常工作。适合：
-- 刚入职的行政小白
-- 想要提升效率的行政老手
-- 需要处理大量文档的任何人
+> 19 个分类的详细介绍已提取至 [skills-intro.md](docs/skills-intro.md)，涵盖每个分类的定位、技能数量与适用人群。
+>
+> 点击上方链接查看完整介绍。
 
 ---
 
@@ -412,9 +247,7 @@ MIT License ── 随便用，反正打工人的命也是命
 |:---:|:---:|
 | <img src="https://multimedia.nt.qq.com.cn/download?appid=1406&fileid=EhSLRrAdb0EQ3jRLQs3LAt7Z4mlvGxit3wYg_goo_-Hg_oHnkwMyBHByb2RQgLsvWhB-jBU2OwfbUhJicYMiQCrregIZpoIBAmd6&rkey=CAISMC-2UGt2PSEruBAEAydtyaZ3OH5qkSWba33wLaRl8jzqDuaQN8eCUHtT2-pPnab8iQ&spec=0" width="200" /> | <img src="https://multimedia.nt.qq.com.cn/download?appid=1406&fileid=EhTteqNBlxCl2O3xVbpXwWMZHFfNiRjphQgg_goo2qjk_oHnkwMyBHByb2RQgLsvWhAqRkC_wYF7awqu_4PEgc45egIxkYIBAmd6&rkey=CAISMC-2UGt2PSEruBAEAydtyaZ3OH5qkSWba9XXGPgUl_3GSS6YULY1ektbOTjKAGvbvQ&spec=0" width="200" /> |
 | <img src="docs/images/wechat-pay.jpg" width="200" /> | <img src="docs/images/wechat-qr.jpg" width="200" /> |
-| <img src="/docs/images/wechat-pay.jpg" width="200" /> | <img src="/docs/images/wechat-qr.jpg" width="200" /> |
-| ![微信支付二维码](docs/images/wechat-pay.jpg){:width="200px"} | ![微信联系二维码](docs/images/wechat-qr.jpg){:width="200px"} |
-| <img src="https://raw.githubusercontent.com/zhangtao2016/awesome-niuma-skills/main/docs/images/wechat-pay.jpg" width="200" /> | <img src="https://raw.githubusercontent.com/zhangtao2016/awesome-niuma-skills/main/docs/images/wechat-qr.jpg" width="200" /> |
+
 
 > 💬 有任何问题或想法，欢迎联系！
 > 

@@ -288,10 +288,12 @@ awesome-niuma-skills/
 │   │   ├── supply-chain-risk-auditor: 供应链风险审计
 │   │   └── variant-analysis: 变体分析
 │   │
-│   ├── 🧠 知识管理/                               (4 skills)
+│   ├── 🧠 知识管理/                               (6 skills)
 │   │   ├── file-organizer: 文件整理器
 │   │   ├── graphify: 知识图谱
 │   │   ├── ima-skill: IMA 知识库
+│   │   │   ├── knowledge-base: IMA 知识库管理
+│   │   │   └── notes: IMA 笔记管理
 │   │   └── notebooklm-skill: NotebookLM
 │   │
 │   ├── 💻 程序员_开发/                           (33 skills)
