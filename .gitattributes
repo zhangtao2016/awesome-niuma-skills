@@ -1,3 +1,40 @@
-*.bat text eol=crlf
+# 1. 全局文本规则
 * text eol=lf
+
+# 2. Windows 批处理特殊处理
+*.bat text eol=crlf
+
+# 3. 所有已知二进制文件（必须放在后面）
+*.dll binary
+*.exe binary
 *.so binary
+*.dylib binary
+*.pyd binary
+
+# 图片
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.gif binary
+*.bmp binary
+*.webp binary
+*.svg binary
+
+# 音视频
+*.mp3 binary
+*.mp4 binary
+*.mov binary
+*.avi binary
+
+# 文档、压缩包、字体、数据库等
+*.pdf binary
+*.zip binary
+*.tar.gz binary
+*.gz binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.db binary
+*.sqlite binary

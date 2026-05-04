@@ -53,6 +53,8 @@ Thumbs.db
 Desktop.ini
 ~$*.*
 .vscode/
+.qoder/
+.claude/
 
 # RIPER workflow (Claude Code): local plans/reviews
 .claude/memory-bank/
@@ -61,7 +63,3 @@ Desktop.ini
 openmemory.mdc
 openmemory.md
 .cursor\rules\openmemory.mdc
-
-
-cc-switch.db
-

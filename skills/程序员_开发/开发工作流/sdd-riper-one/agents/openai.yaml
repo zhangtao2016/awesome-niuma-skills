@@ -1,0 +1,7 @@
+interface:
+  display_name: "SDD-RIPER ONE"
+  short_description: "Spec 驱动研发 + RIPER 阶段门禁（支持 CodeMap、Context Bundle 与三轴评审）"
+  default_prompt: "Use $sdd-riper-one in strict SDD-RIPER mode. Core rules: No Spec No Code, No Approval No Execute, Spec is Truth, Reverse Sync. Treat create_codemap/build_context_bundle as Pre-Research utilities; sdd_bootstrap starts RIPER. Flow: Research → (Innovate) → Plan → Execute → Review. Hot context every turn: phase, approval status, goal, scope, active checklist, open questions, risks, next action, spec path. Hot context never replaces spec; spec wins on conflict. Approval must be explicit 'Plan Approved' — never inferred. Load warm context on phase transitions; reload full spec on conflicts or uncertainty. Keep cold context on demand only."
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,260 @@
+name: Contribution Statistics
+on:
+  schedule:
+    - cron: '0 8 * * *'  # 每天北京时间16:00运行
+  workflow_dispatch:  # 支持手动触发
+  push:
+    branches: [ main, master ]
+
+jobs:
+  generate-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: read
+      pull-requests: read
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Generate Contribution Statistics
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPO: ${{ github.repository }}
+      run: |
+        # 安装依赖
+        pip install requests pygithub matplotlib
+        
+        # 创建统计脚本
+        cat > generate_stats.py << 'EOF'
+        import os
+        import json
+        from datetime import datetime, timedelta
+        from github import Github
+        import matplotlib.pyplot as plt
+        import numpy as np
+        
+        # 配置
+        GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
+        REPO_NAME = os.environ.get('REPO')
+        
+        # 连接GitHub API
+        g = Github(GITHUB_TOKEN)
+        repo = g.get_repo(REPO_NAME)
+        
+        # 获取统计数据
+        def get_contribution_stats():
+            stats = {
+                'total_commits': 0,
+                'contributors': [],
+                'pr_stats': {
+                    'open': 0,
+                    'closed': 0,
+                    'merged': 0
+                },
+                'issue_stats': {
+                    'open': 0,
+                    'closed': 0
+                },
+                'activity_by_day': {}
+            }
+            
+            # 统计提交
+            commits = repo.get_commits()
+            stats['total_commits'] = commits.totalCount
+            
+            # 统计贡献者
+            contributors = repo.get_stats_contributors()
+            if contributors:
+                for contributor in contributors:
+                    stats['contributors'].append({
+                        'username': contributor.author.login,
+                        'commits': contributor.total,
+                        'additions': sum(w[0] for w in contributor.weeks),
+                        'deletions': sum(w[1] for w in contributor.weeks)
+                    })
+            
+            # 统计Pull Requests
+            pulls = repo.get_pulls(state='all')
+            for pr in pulls:
+                if pr.merged:
+                    stats['pr_stats']['merged'] += 1
+                elif pr.state == 'open':
+                    stats['pr_stats']['open'] += 1
+                else:
+                    stats['pr_stats']['closed'] += 1
+            
+            # 统计Issues
+            issues = repo.get_issues(state='all')
+            for issue in issues:
+                if not issue.pull_request:  # 排除PR
+                    if issue.state == 'open':
+                        stats['issue_stats']['open'] += 1
+                    else:
+                        stats['issue_stats']['closed'] += 1
+            
+            return stats
+        
+        def generate_svg(stats):
+            # 生成贡献者排行榜SVG
+            contributors_sorted = sorted(stats['contributors'], 
+                                        key=lambda x: x['commits'], 
+                                        reverse=True)[:10]
+            
+            fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(12, 8))
+            
+            # 1. 贡献者提交数
+            names = [c['username'][:10] for c in contributors_sorted]
+            commits = [c['commits'] for c in contributors_sorted]
+            ax1.barh(names, commits)
+            ax1.set_title('Top 10 Contributors by Commits')
+            ax1.set_xlabel('Commits')
+            
+            # 2. PR状态饼图
+            pr_labels = ['Open', 'Closed', 'Merged']
+            pr_values = [stats['pr_stats']['open'], 
+                        stats['pr_stats']['closed'], 
+                        stats['pr_stats']['merged']]
+            ax2.pie([v for v in pr_values if v > 0], 
+                   labels=[l for l, v in zip(pr_labels, pr_values) if v > 0],
+                   autopct='%1.1f%%')
+            ax2.set_title('Pull Request Status')
+            
+            # 3. Issue状态饼图
+            issue_labels = ['Open Issues', 'Closed Issues']
+            issue_values = [stats['issue_stats']['open'], 
+                          stats['issue_stats']['closed']]
+            ax3.pie([v for v in issue_values if v > 0], 
+                   labels=[l for l, v in zip(issue_labels, issue_values) if v > 0],
+                   autopct='%1.1f%%')
+            ax3.set_title('Issue Status')
+            
+            # 4. 总览文本
+            ax4.axis('off')
+            overview_text = f"""
+            Repository Statistics
+            ====================
+            Total Commits: {stats['total_commits']}
+            Total Contributors: {len(stats['contributors'])}
+            Open PRs: {stats['pr_stats']['open']}
+            Merged PRs: {stats['pr_stats']['merged']}
+            Open Issues: {stats['issue_stats']['open']}
+            
+            Last Updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+            """
+            ax4.text(0.1, 0.5, overview_text, fontsize=10, 
+                    verticalalignment='center',
+                    fontfamily='monospace')
+            
+            plt.tight_layout()
+            plt.savefig('contribution-stats.svg', format='svg', bbox_inches='tight')
+            plt.close()
+        
+        if __name__ == '__main__':
+            print("Generating contribution statistics...")
+            stats = get_contribution_stats()
+            
+            # 保存JSON数据
+            with open('contribution-stats.json', 'w') as f:
+                json.dump(stats, f, indent=2, default=str)
+            
+            # 生成SVG图表
+            generate_svg(stats)
+            print("Statistics generated successfully!")
+        EOF
+        
+        # 运行脚本
+        python generate_stats.py
+        
+        # 将统计信息写入README
+        cat > update_readme.py << 'EOF'
+        import json
+        from datetime import datetime
+        
+        # 读取统计数据
+        with open('contribution-stats.json', 'r') as f:
+            stats = json.load(f)
+        
+        # 生成Markdown表格
+        md_content = f"""## 📊 Contribution Statistics
+        
+        Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+        
+        ### 📈 Overview
+        | Metric | Count |
+        |--------|-------|
+        | **Total Commits** | {stats['total_commits']} |
+        | **Total Contributors** | {len(stats['contributors'])} |
+        | **Open Pull Requests** | {stats['pr_stats']['open']} |
+        | **Merged Pull Requests** | {stats['pr_stats']['merged']} |
+        | **Open Issues** | {stats['issue_stats']['open']} |
+        
+        ### 👥 Top Contributors
+        | Rank | Contributor | Commits |
+        |------|------------|---------|
+        """
+        
+        # 添加贡献者排行
+        contributors_sorted = sorted(stats['contributors'], 
+                                   key=lambda x: x['commits'], 
+                                   reverse=True)[:10]
+        
+        for i, contributor in enumerate(contributors_sorted, 1):
+            md_content += f"| {i} | [{contributor['username']}](https://github.com/{contributor['username']}) | {contributor['commits']} |\n"
+        
+        # 更新README.md
+        with open('README.md', 'r+', encoding='utf-8') as f:
+            content = f.read()
+            
+            # 查找并替换统计部分
+            start_marker = '<!-- CONTRIBUTION_STATS_START -->'
+            end_marker = '<!-- CONTRIBUTION_STATS_END -->'
+            
+            if start_marker in content and end_marker in content:
+                # 替换现有内容
+                before = content.split(start_marker)[0]
+                after = content.split(end_marker)[1]
+                new_content = before + start_marker + '\n' + md_content + '\n' + end_marker + after
+            else:
+                # 如果没有标记，添加到文件末尾
+                new_content = content + '\n\n' + start_marker + '\n' + md_content + '\n' + end_marker
+        
+        with open('README.md', 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        
+        print("README updated successfully!")
+        EOF
+        
+        python update_readme.py
+    
+    - name: Upload SVG chart
+      uses: actions/upload-artifact@v4
+      with:
+        name: contribution-chart
+        path: contribution-stats.svg
+        retention-days: 5
+    
+    - name: Upload JSON data
+      uses: actions/upload-artifact@v4
+      with:
+        name: stats-data
+        path: contribution-stats.json
+        retention-days: 5
+    
+    - name: Commit and Push Changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add README.md
+        git add contribution-stats.svg
+        git add contribution-stats.json
+        git commit -m "📈 Update contribution statistics [skip ci]" || echo "No changes to commit"
+        git push
