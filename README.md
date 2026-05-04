@@ -411,7 +411,10 @@ MIT License ── 随便用，反正打工人的命也是命
 | 微信赞赏 | 微信联系 |
 |:---:|:---:|
 | <img src="https://multimedia.nt.qq.com.cn/download?appid=1406&fileid=EhSLRrAdb0EQ3jRLQs3LAt7Z4mlvGxit3wYg_goo_-Hg_oHnkwMyBHByb2RQgLsvWhB-jBU2OwfbUhJicYMiQCrregIZpoIBAmd6&rkey=CAISMC-2UGt2PSEruBAEAydtyaZ3OH5qkSWba33wLaRl8jzqDuaQN8eCUHtT2-pPnab8iQ&spec=0" width="200" /> | <img src="https://multimedia.nt.qq.com.cn/download?appid=1406&fileid=EhTteqNBlxCl2O3xVbpXwWMZHFfNiRjphQgg_goo2qjk_oHnkwMyBHByb2RQgLsvWhAqRkC_wYF7awqu_4PEgc45egIxkYIBAmd6&rkey=CAISMC-2UGt2PSEruBAEAydtyaZ3OH5qkSWba9XXGPgUl_3GSS6YULY1ektbOTjKAGvbvQ&spec=0" width="200" /> |
-| <img src="./docs/images/wechat-pay.jpg" width="200" /> | <img src="./docs/images/wechat-qr.jpg" width="200" /> |
+| <img src="docs/images/wechat-pay.jpg" width="200" /> | <img src="docs/images/wechat-qr.jpg" width="200" /> |
+| <img src="/docs/images/wechat-pay.jpg" width="200" /> | <img src="/docs/images/wechat-qr.jpg" width="200" /> |
+| ![微信支付二维码](docs/images/wechat-pay.jpg){:width="200px"} | ![微信联系二维码](docs/images/wechat-qr.jpg){:width="200px"} |
+| <img src="https://raw.githubusercontent.com/zhangtao2016/awesome-niuma-skills/main/docs/images/wechat-pay.jpg" width="200" /> | <img src="https://raw.githubusercontent.com/zhangtao2016/awesome-niuma-skills/main/docs/images/wechat-qr.jpg" width="200" /> |
 
 > 💬 有任何问题或想法，欢迎联系！
 > 
