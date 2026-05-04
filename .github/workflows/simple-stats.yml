@@ -1,0 +1,35 @@
+name: Simple Contribution Stats
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # 每周日运行
+  workflow_dispatch: true
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    
+    - name: Generate Stats with thanks-contributors
+      uses: thanks-contributors/thanks-contributors-action@v2
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        config_file: .github/thanks-contributors.yml
+        output_file: CONTRIBUTORS.md
+    
+    - name: Update README
+      run: |
+        # 将CONTRIBUTORS.md内容添加到README
+        if [ -f "CONTRIBUTORS.md" ]; then
+          echo -e "\n## Contributors\n" >> README.md
+          cat CONTRIBUTORS.md >> README.md
+        fi
+    
+    - name: Commit changes
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "📊 Update contributors list [skip ci]"
+        file_pattern: README.md CONTRIBUTORS.md
+        

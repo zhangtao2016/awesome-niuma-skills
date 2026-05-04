@@ -258,3 +258,4 @@ jobs:
         git add contribution-stats.json
         git commit -m "📈 Update contribution statistics [skip ci]" || echo "No changes to commit"
         git push
+        
