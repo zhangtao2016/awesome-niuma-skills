@@ -256,7 +256,23 @@ MIT License ── 随便用，反正打工人的命也是命
 ## 📈 项目统计
 
 <!-- CONTRIBUTION_STATS_START -->
-<!-- 这里会被GitHub Actions自动更新 -->
+## 📊 Contribution Statistics
+
+Last updated: 2026-05-16 19:17:59
+
+### 📈 Overview
+| Metric | Count |
+|--------|-------|
+| **Total Commits** | 12 |
+| **Total Contributors** | 0 |
+| **Open Pull Requests** | 0 |
+| **Merged Pull Requests** | 0 |
+| **Open Issues** | 0 |
+
+### 👥 Top Contributors
+| Rank | Contributor | Commits |
+|------|------------|---------|
+
 <!-- CONTRIBUTION_STATS_END -->
 
 ## 👥 贡献者
