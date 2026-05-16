@@ -30,15 +30,16 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         REPO: ${{ github.repository }}
       run: |
-        # 安装依赖
-        pip install requests pygithub matplotlib
+        # 安装依赖（锁定 PyGithub>=2.3.0 修复无限递归bug）
+        pip install requests "PyGithub>=2.3.0" matplotlib
         
         # 创建统计脚本
         cat > generate_stats.py << 'EOF'
         import os
         import json
+        import time
         from datetime import datetime, timedelta
-        from github import Github
+        from github import Github, Auth
         import matplotlib.pyplot as plt
         import numpy as np
         
@@ -47,7 +48,7 @@ jobs:
         REPO_NAME = os.environ.get('REPO')
         
         # 连接GitHub API
-        g = Github(GITHUB_TOKEN)
+        g = Github(auth=Auth.Token(GITHUB_TOKEN))
         repo = g.get_repo(REPO_NAME)
         
         # 获取统计数据
@@ -71,8 +72,18 @@ jobs:
             commits = repo.get_commits()
             stats['total_commits'] = commits.totalCount
             
-            # 统计贡献者
-            contributors = repo.get_stats_contributors()
+            # 统计贡献者（Stats API 可能返回 202，需要重试）
+            contributors = None
+            for attempt in range(5):
+                try:
+                    contributors = repo.get_stats_contributors()
+                    if contributors is not None:
+                        break
+                except Exception as e:
+                    print(f"Stats contributors attempt {attempt+1} failed: {e}")
+                print(f"Stats API not ready, retrying in {2**attempt}s...")
+                time.sleep(2 ** attempt)
+            
             if contributors:
                 for contributor in contributors:
                     stats['contributors'].append({

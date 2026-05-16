@@ -22,3 +22,6 @@
 [submodule "skills/程序员_开发/开发工作流/verification-before-completion"]
 	path = skills/程序员_开发/开发工作流/verification-before-completion
 	url = https://github.com/Charpup/verification-before-completion.git
+[submodule "skills/知识管理/obsidian-skills"]
+	path = skills/知识管理/obsidian-skills
+	url = https://github.com/kepano/obsidian-skills.git
