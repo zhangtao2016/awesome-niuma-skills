@@ -2,7 +2,7 @@ name: Simple Contribution Stats
 on:
   schedule:
     - cron: '0 0 * * 0'  # 每周日运行
-  workflow_dispatch: true
+  workflow_dispatch:
 
 jobs:
   stats:
